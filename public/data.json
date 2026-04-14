@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "name": "Arif Ahmed",
+    "picture": "https://randomuser.me",
+    "email": "arif.ahmed@example.com",
+    "days_since_contact": 15,
+    "status": "overdue",
+    "tags": ["college", "close friend"],
+    "bio": "Met in university. We love hiking and exploring new cafes together.",
+    "goal": 7,
+    "next_due_date": "2024-05-10"
+  },
+  {
+    "id": 2,
+    "name": "Sara Islam",
+    "picture": "https://randomuser.me",
+    "email": "sara.islam@example.com",
+    "days_since_contact": 5,
+    "status": "almost due",
+    "tags": ["school", "childhood"],
+    "bio": "Childhood bestie. We share a deep love for classical music and art.",
+    "goal": 7,
+    "next_due_date": "2024-05-20"
+  },
+  {
+    "id": 3,
+    "name": "Tanvir Hasan",
+    "picture": "https://randomuser.me",
+    "email": "tanvir.h@example.com",
+    "days_since_contact": 2,
+    "status": "on-track",
+    "tags": ["office", "colleague"],
+    "bio": "Former colleague and a tech enthusiast. Always helps with coding bugs.",
+    "goal": 14,
+    "next_due_date": "2024-05-28"
+  },
+  {
+    "id": 4,
+    "name": "Nabila Rahman",
+    "picture": "https://randomuser.me",
+    "email": "nabila.r@example.com",
+    "days_since_contact": 20,
+    "status": "overdue",
+    "tags": ["neighborhood", "neighbor"],
+    "bio": "Neighbor and a great cook. We often swap traditional recipes.",
+    "goal": 10,
+    "next_due_date": "2024-05-05"
+  },
+  {
+    "id": 5,
+    "name": "Fahim Shahriar",
+    "picture": "https://randomuser.me",
+    "email": "fahim.s@example.com",
+    "days_since_contact": 6,
+    "status": "almost due",
+    "tags": ["gaming", "online"],
+    "bio": "Long-time gaming partner. We play FPS games every weekend.",
+    "goal": 7,
+    "next_due_date": "2024-05-18"
+  },
+  {
+    "id": 6,
+    "name": "Maliha Chowdhury",
+    "picture": "https://randomuser.me",
+    "email": "maliha.c@example.com",
+    "days_since_contact": 1,
+    "status": "on-track",
+    "tags": ["travel", "adventurer"],
+    "bio": "Met during a solo trip to Sylhet. Always planning the next adventure.",
+    "goal": 30,
+    "next_due_date": "2024-06-12"
+  },
+  {
+    "id": 7,
+    "name": "Rakib Hossain",
+    "picture": "https://randomuser.me",
+    "email": "rakib.h@example.com",
+    "days_since_contact": 12,
+    "status": "overdue",
+    "tags": ["gym", "fitness"],
+    "bio": "Gym buddy. He motivates me to stay consistent with my workouts.",
+    "goal": 3,
+    "next_due_date": "2024-05-08"
+  },
+  {
+    "id": 8,
+    "name": "Zarin Tasnim",
+    "picture": "https://randomuser.me",
+    "email": "zarin.t@example.com",
+    "days_since_contact": 4,
+    "status": "almost due",
+    "tags": ["coding", "mentor"],
+    "bio": "My first programming mentor. She has a brilliant mind for logic.",
+    "goal": 5,
+    "next_due_date": "2024-05-15"
+  },
+  {
+    "id": 9,
+    "name": "Siam Ahmed",
+    "picture": "https://randomuser.me",
+    "email": "siam.a@example.com",
+    "days_since_contact": 0,
+    "status": "on-track",
+    "tags": ["cricket", "sports"],
+    "bio": "Teammate from the local cricket club. Very energetic person.",
+    "goal": 7,
+    "next_due_date": "2024-05-21"
+  },
+  {
+    "id": 10,
+    "name": "Ishrat Jahan",
+    "picture": "https://randomuser.me",
+    "email": "ishrat.j@example.com",
+    "days_since_contact": 25,
+    "status": "overdue",
+    "tags": ["highschool", "old friend"],
+    "bio": "Old friend from school days. We lost touch but recently reconnected.",
+    "goal": 30,
+    "next_due_date": "2024-05-01"
+  }
+]

@@ -3,6 +3,7 @@ import { ImStatsDots } from 'react-icons/im';
 import { IoMdHome } from 'react-icons/io';
 import { RiTimeLine } from 'react-icons/ri';
 import { NavLink } from 'react-router';
+import logoImg from "../../assets/img/logo.png"
 
 
 const links = <>
@@ -32,7 +33,7 @@ const Navbar = () => {
         {links}
       </ul>
     </div>
-    <h1 className=" text-[#244d3fFF] text-3xl">KeenKeeper</h1>
+     <img src={logoImg} alt="logo img" />
   </div>
   <div className="navbar-end hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
