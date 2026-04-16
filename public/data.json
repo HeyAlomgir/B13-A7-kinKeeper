@@ -10,7 +10,8 @@
     "tags": ["college", "close friend"],
     "bio": "Met in university. We love hiking and exploring new cafes together.",
     "goal": 7,
-    "next_due_date": "2026-05-10"
+    "next_due_date": "2026-05-10",
+     "preferred_contact": "Email"
   },
   {
     "id": 2,
@@ -23,7 +24,8 @@
     "tags": ["school", "childhood"],
     "bio": "Childhood bestie. We share a deep love for classical music and art.",
     "goal": 7,
-    "next_due_date": "2026-05-20"
+    "next_due_date": "2026-05-20",
+      "preferred_contact": "Phone"
   },
   {
     "id": 3,
@@ -36,7 +38,8 @@
     "tags": ["office", "colleague"],
     "bio": "Former colleague and a tech enthusiast. Always helps with coding bugs.",
     "goal": 14,
-    "next_due_date": "2026-05-28"
+    "next_due_date": "2026-05-28",
+     "preferred_contact": "Email"
   },
   {
     "id": 4,
@@ -49,7 +52,8 @@
     "tags": ["neighborhood", "neighbor"],
     "bio": "Neighbor and a great cook. We often swap traditional recipes.",
     "goal": 10,
-    "next_due_date": "2026-05-05"
+    "next_due_date": "2026-05-05",
+     "preferred_contact": "Phone"
   },
   {
     "id": 5,
@@ -62,7 +66,8 @@
     "tags": ["gaming", "online"],
     "bio": "Long-time gaming partner. We play FPS games every weekend.",
     "goal": 7,
-    "next_due_date": "2026-05-18"
+    "next_due_date": "2026-05-18",
+      "preferred_contact": "Email"
   },
   {
     "id": 6,
@@ -75,7 +80,8 @@
     "tags": ["travel", "adventurer"],
     "bio": "Met during a solo trip to Sylhet. Always planning the next adventure.",
     "goal": 30,
-    "next_due_date": "2026-06-12"
+    "next_due_date": "2026-06-12",
+      "preferred_contact": "Video Call"
   },
   {
     "id": 7,
@@ -88,7 +94,8 @@
     "tags": ["gym", "fitness"],
     "bio": "Gym buddy. He motivates me to stay consistent with my workouts.",
     "goal": 3,
-    "next_due_date": "2026-05-08"
+    "next_due_date": "2026-05-08",
+  "preferred_contact": "Phone"
   },
   {
     "id": 8,
@@ -101,7 +108,9 @@
     "tags": ["coding", "mentor"],
     "bio": "My first programming mentor. She has a brilliant mind for logic.",
     "goal": 5,
-    "next_due_date": "2026-05-15"
+    "next_due_date": "2026-05-15",
+     "preferred_contact": "Email"
+
   },
   {
     "id": 9,
@@ -114,7 +123,8 @@
     "tags": ["cricket", "sports"],
     "bio": "Teammate from the local cricket club. Very energetic person.",
     "goal": 7,
-    "next_due_date": "2026-05-21"
+    "next_due_date": "2026-05-21",
+     "preferred_contact": "Phone"
   },
   {
     "id": 10,
@@ -127,6 +137,7 @@
     "tags": ["highschool", "old friend"],
     "bio": "Old friend from school days. We lost touch but recently reconnected.",
     "goal": 30,
-    "next_due_date": "2026-05-01"
+    "next_due_date": "2026-05-01",
+     "preferred_contact": "Email"
   }
 ]

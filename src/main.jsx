@@ -9,6 +9,7 @@ import { RouterProvider } from 'react-router'
 import Timeline from './pages/timeline/Timeline.jsx'
 import Status from './pages/status/Status.jsx'
 import FriendDetails from './pages/freiendDetails/FriendDetails.jsx'
+import TimelineProviderFriend from './context/TimelineProviderFriend.jsx'
 
 const router = createBrowserRouter([
   {
@@ -37,6 +38,12 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
+
+    <TimelineProviderFriend>
+
     <RouterProvider router={router}></RouterProvider>
+    </TimelineProviderFriend>
+    
   </StrictMode>,
+  
 )

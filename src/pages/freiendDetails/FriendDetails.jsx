@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { useParams } from 'react-router';
 import UseFriend from '../../hooks/UseFriend';
 import { HiMiniBellSnooze } from 'react-icons/hi2';
 import { FaArchive, FaEnvelopeOpenText, FaVideoSlash } from 'react-icons/fa';
 import { MdDelete } from 'react-icons/md';
 import { FiPhoneCall } from 'react-icons/fi';
+import { TimelineFried } from '../../context/TimelineFreind';
+import { toast } from 'react-toastify';
 
 
 const FriendDetails = () => {
@@ -12,15 +14,42 @@ const FriendDetails = () => {
     // console.log(id);
 
     const  {friends,loding} = UseFriend();
-    console.log(friends);
+    // console.log(friends);
+
+
+const {audio,setAudio}=useContext(TimelineFried)
+const {text,setText}=useContext(TimelineFried)
+const {vedeo,setVedeo}=useContext(TimelineFried)
 
   if(loding){
         return <p>Fried not found</p>
     }
 
-    const exceptedFriend = friends.find(friend => friend.id === parseInt(id));
-    console.log(exceptedFriend);
 
+   
+
+    const exceptedFriend = friends.find(friend => friend.id === parseInt(id));
+    // console.log(exceptedFriend);
+
+
+    
+
+
+
+    const handleAudio=()=>{
+      setAudio([...audio,exceptedFriend]);
+     toast.success(`${exceptedFriend.name} added by Call`);
+    }
+
+    const handleText=()=>{
+      setText([...text,exceptedFriend]);
+      toast.success(`${exceptedFriend.name} added by Text`);
+    }
+
+    const handleVedeo=()=>{
+      setVedeo([...vedeo,exceptedFriend]);
+      toast.success(`${exceptedFriend.name} added by Vedeo Call`);
+    }
 
 
   
@@ -28,9 +57,9 @@ const FriendDetails = () => {
     
     return (
         <div className='container mx-auto flex flex-col md:flex-row
-         gap-5'>
-            <div className='left'>
-        <div className="card bg-base-100 w-96 shadow-sm m-4  ">
+         gap-5  '>
+            <div className=''>
+        <div className="card bg-base-100 shadow-sm m-4  ">
   <figure className="px-10 pt-10">
     <img
       src={exceptedFriend.picture} alt={exceptedFriend.name}
@@ -50,7 +79,7 @@ const FriendDetails = () => {
     </div>
     <p className='bg-[#cbfadbFF]  px-2  rounded-full text-[#244d3F] '>{exceptedFriend.category}</p>
     <p className='text-gray-600'>{exceptedFriend.bio}</p>
-    <p className='text-gray-600'>Preferred : email</p>
+    <p className='text-gray-600'>Preferred : {exceptedFriend.preferred_contact} </p>
 
   </div>
      </div>
@@ -63,7 +92,7 @@ const FriendDetails = () => {
      </div>
 
      <div className="card bg-base-100 shadow-sm m-4 w-96  ">
-        <button className='flex items-center  gap-2 text-2xl py-5 mx-auto text-red-500'> <MdDelete /> Delete</button>
+        <button  className='flex items-center  gap-2 text-2xl py-5 mx-auto text-red-500'> <MdDelete /> Delete</button>
      </div>
 
 
@@ -106,17 +135,17 @@ const FriendDetails = () => {
                     <div className='grid grid-cols-1 md:grid-cols-3  lg:gap-5 m-4  text-center  '>
 
 
-                        <div  className='  card   shadow-sm m-4 bg-[#f8fafcFF] py-2  lg:py-12 rounded-2xl ' >
+                        <div  onClick={handleAudio} className='  card   shadow-sm m-4 bg-[#f8fafcFF] py-2  lg:py-12 rounded-2xl ' >
                                 <FiPhoneCall className='mx-auto' />
                                 <p>Call</p>
                         </div>
 
-                        <div  className=' card   shadow-sm m-4 bg-[#f8fafcFF] py-2 lg:py-12 rounded-2xl' >
+                        <div  onClick={handleText} className=' card   shadow-sm m-4 bg-[#f8fafcFF] py-2 lg:py-12 rounded-2xl' >
                                 <FaEnvelopeOpenText className='mx-auto' />
                                 <p>Text</p>
                         </div>
 
-                        <div   className=' card   shadow-sm m-4 bg-[#f8fafcFF] py-2 lg:py-12 rounded-2xl' >
+                        <div   onClick={handleVedeo} className=' card   shadow-sm m-4 bg-[#f8fafcFF] py-2 lg:py-12 rounded-2xl' >
                                 <FaVideoSlash className='mx-auto' />
                                 <p>Video</p>
                         </div>

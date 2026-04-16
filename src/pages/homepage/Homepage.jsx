@@ -7,7 +7,9 @@ const Homepage = () => {
         <div>
          <Banner></Banner>
          <Frends></Frends>
+          
         </div>
+        
     );
 };
 
