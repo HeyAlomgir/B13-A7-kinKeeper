@@ -8,6 +8,7 @@ import Homepage from './pages/homepage/Homepage.jsx'
 import { RouterProvider } from 'react-router'
 import Timeline from './pages/timeline/Timeline.jsx'
 import Status from './pages/status/Status.jsx'
+import FriendDetails from './pages/freiendDetails/FriendDetails.jsx'
 
 const router = createBrowserRouter([
   {
@@ -16,6 +17,10 @@ const router = createBrowserRouter([
     children: [
       {index:true,
         Component:Homepage,
+      },
+      {
+        path:"/friendDetails/:id",
+        Component:FriendDetails,
       },
       {
         path:"/timeline",
