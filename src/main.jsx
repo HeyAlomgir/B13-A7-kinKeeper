@@ -10,6 +10,7 @@ import Timeline from './pages/timeline/Timeline.jsx'
 import Status from './pages/status/Status.jsx'
 import FriendDetails from './pages/freiendDetails/FriendDetails.jsx'
 import TimelineProviderFriend from './context/TimelineProviderFriend.jsx'
+import NotFound from './pages/notFound/NotFound.jsx'
 
 const router = createBrowserRouter([
   {
@@ -32,7 +33,7 @@ const router = createBrowserRouter([
         Component:Status
       }
     ],
-    errorElement: <h2>This page is not found</h2>
+    errorElement: <NotFound></NotFound>
   }
 ])
 

@@ -7,6 +7,7 @@ import { MdDelete } from 'react-icons/md';
 import { FiPhoneCall } from 'react-icons/fi';
 import { TimelineFried } from '../../context/TimelineFreind';
 import { toast } from 'react-toastify';
+import { HashLoader, PacmanLoader } from 'react-spinners';
 
 
 const FriendDetails = () => {
@@ -21,10 +22,7 @@ const {audio,setAudio}=useContext(TimelineFried)
 const {text,setText}=useContext(TimelineFried)
 const {vedeo,setVedeo}=useContext(TimelineFried)
 
-  if(loding){
-        return <p>Fried not found</p>
-    }
-
+  
 
    
 
@@ -52,10 +50,14 @@ const {vedeo,setVedeo}=useContext(TimelineFried)
     }
 
 
-  
-
+ 
     
     return (
+      <>
+
+      {loding ? (
+        <div className='flex justify-center items-center '><PacmanLoader  color="#facc15"/></div>
+      ):(
         <div className='container mx-auto flex flex-col md:flex-row
          gap-5  '>
             <div className=''>
@@ -157,6 +159,10 @@ const {vedeo,setVedeo}=useContext(TimelineFried)
 
             </div>
         </div>
+      )}
+      </>
+        
+  
     );
 };
 

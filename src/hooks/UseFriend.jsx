@@ -8,7 +8,11 @@ const UseFriend = () => {
                 const res = await fetch("/data.json");
                 const data =await res.json();
                 setFriends(data);
-                setLoding(false)
+
+                setTimeout(()=> {
+
+                    setLoding(false)
+                },1500);
             }
             fetcData()
         },[]);

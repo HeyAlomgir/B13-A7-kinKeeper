@@ -2,10 +2,11 @@ import React from 'react';
 import { Link } from 'react-router';
 
 const FriendCard = ({friend}) => {
-    console.log(friend);
+    // console.log(friend);
     return (
         <Link to={`/friendDetails/${friend.id}`}>
             <div className=''>
+              
    <div className="card bg-base-100 shadow-sm m-4  ">
   <figure className="px-10 pt-10">
     <img

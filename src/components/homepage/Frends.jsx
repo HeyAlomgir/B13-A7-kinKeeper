@@ -1,7 +1,7 @@
 import React from 'react';
 import UseFriend from '../../hooks/UseFriend';
 import FriendCard from '../UI/FriendCard';
-import { HashLoader } from 'react-spinners';
+import { HashLoader, PacmanLoader } from 'react-spinners';
 import FriendDetails from '../../pages/freiendDetails/FriendDetails';
 
 const Frends = () => {
@@ -41,7 +41,10 @@ const Frends = () => {
 
             </div>
                 {loding ? 
-                <div className='flex justify-center items-center text-purple-500'><HashLoader className='text-purple-600' /></div> :
+                <div className='flex justify-center items-center'><PacmanLoader color="#facc15" /></div> :
+
+
+
                 <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 '>
                     {friends.map ((friend,index) => {
                         return <div key={index}>

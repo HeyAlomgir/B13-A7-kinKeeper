@@ -52,7 +52,7 @@ const Timeline = () => {
               
                 audio.map((call,ind)=>{
                     return (
-                        <div key={ind} className='card bg-base-100 shadow rounded-2xl w-full py-5 my-5 '>
+                        <div key={ind} className='card bg-base-100 shadow rounded-2xl w-full py-5 my-5 z-10 '>
 
                       <div className='flex items-center gap-5 m-4'>
                           <div> <LuPhoneCall className='text-5xl' /></div>
