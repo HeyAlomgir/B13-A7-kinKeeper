@@ -7,6 +7,7 @@ import { FcNoVideo } from 'react-icons/fc';
 const Timeline = () => {
 
        const {audio,text,vedeo}=useContext(TimelineFried);
+       console.log(audio,text,vedeo);
     
 
        const [selected,setSelcted]=useState("all");
